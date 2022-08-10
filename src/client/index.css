@@ -1,0 +1,105 @@
+/* index.css */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #182e48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LOGIN SECTION */
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  background: #009EFF;
+  color: #fff;
+  padding: 13px 35px;
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.instruction {
+  text-align: center;
+  color: #009EFF;
+  color: #09FFD0;
+  margin: 1rem 0;
+}
+
+/* DASHBOARD SECTION */
+
+.dashboard-section {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.moralis-verified {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+
+.moralis-verified img {
+  width: 64px;
+  height: 64px;
+}
+
+.moralis-verified-title {
+  font-size: 36px;
+  color: #00C3F8;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.wallet-address-heading,
+.wallet-balance-heading {
+  color: white;
+  letter-spacing: 1.5px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.wallet-balance,
+.wallet-address {
+  color: #09FFD0;
+  letter-spacing: normal;
+  display: block;
+  margin-top: 1rem;
+  background: #009EFF;
+  padding: 8px;
+  border-radius: 19px;
+}
+
+.logout-btn {
+  color: white;
+  background: #cc0000;
+  padding: 13px 35px;
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/* REMOVE AFTER TESTING */
+.login-section {
+  display: none;
+}
+
+.dashboard-section {
+  display: flex;
+}
