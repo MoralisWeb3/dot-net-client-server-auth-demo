@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoralisDemo", "server\MoralisDemo.csproj", "{FC352AD5-AC9A-4DF7-9B41-7A1B7E2CF501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtServices", "..\JwtServices\JwtServices.csproj", "{74A4DF51-5DC9-48D1-9F93-EF1FD1436D14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC352AD5-AC9A-4DF7-9B41-7A1B7E2CF501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC352AD5-AC9A-4DF7-9B41-7A1B7E2CF501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC352AD5-AC9A-4DF7-9B41-7A1B7E2CF501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC352AD5-AC9A-4DF7-9B41-7A1B7E2CF501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A4DF51-5DC9-48D1-9F93-EF1FD1436D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A4DF51-5DC9-48D1-9F93-EF1FD1436D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A4DF51-5DC9-48D1-9F93-EF1FD1436D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A4DF51-5DC9-48D1-9F93-EF1FD1436D14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00BBB2EE-2D28-45D2-BA37-B3362E613881}
+	EndGlobalSection
+EndGlobal

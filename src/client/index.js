@@ -70,11 +70,11 @@ const loginWithEth = async () => {
 
       const verifyData = {message: msg.message, signature: signature};
       const verifyRequestUrl = `${myServerUrl}/Authentication/verify/0`;
-      const authToken = await xhr("POST", verifyRequestUrl, JSON.stringify(verifyData));
+      const jwtToken = await xhr("POST", verifyRequestUrl, JSON.stringify(verifyData));
 
-      alert("Authenticated: " + authToken.token);
-
-      // 5. Show the user dashboard
+      document.querySelector(".moralis-jwt-display").innerHTML = jwtToken;
+      
+      // 7. Show the user dashboard
       showUserDashboard();
 
     } catch (error) {

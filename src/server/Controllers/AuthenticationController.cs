@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using JwtServices;
+using Microsoft.AspNetCore.Mvc;
 using Moralis;
 using Moralis.AuthApi.Models;
 using Moralis.Network;
@@ -70,12 +71,12 @@ namespace MoralisDemo.Controllers
                 // Here is where you would save authentication information to the database.
                 // ---------------------------------------------------------------------------------
 
-                // ---------------------------------------------------------------------------------
-                // Here is where you would generate a JWT or other authentication response object.
-                // ---------------------------------------------------------------------------------
+                Dictionary<string, string> claims = new Dictionary<string, string>();
+                claims.Add("Address", completeResp.Address);
+                claims.Add("AuthenticationProfileId", completeResp.ProfileId);
+                claims.Add("SignatureValidated", "true");
 
-                // Return custom authentication response here.
-                string token =  $"{{\"token\":\"{completeResp.Address}:{completeResp.ProfileId}\"}}";
+                string token = TokenManager.GenerateToken(claims);
 
                 return new CreatedAtRouteResult(nameof(VerifySignature), token);
             }

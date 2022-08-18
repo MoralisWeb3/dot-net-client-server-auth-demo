@@ -66,7 +66,8 @@ body {
 }
 
 .wallet-address-heading,
-.wallet-balance-heading {
+.wallet-balance-heading,
+.moralis-jwt-heading {
   color: white;
   letter-spacing: 1.5px;
   margin-top: 1rem;
@@ -102,4 +103,15 @@ body {
 
 .dashboard-section {
   display: flex;
+}
+
+.moralis-jwt-display {
+  color: #fff;
+  background: #009EFF;
+  width: 600px;
+  height: 10em;
+  display: flex;
+  margin-top: 1rem;
+  padding: 8px;
+  border-radius: 19px;
 }
