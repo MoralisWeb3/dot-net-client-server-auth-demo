@@ -41,9 +41,7 @@ app.MapControllers();
 // Setup Moralis Client
 Moralis.MoralisClient.ConnectionData = new Moralis.Models.ServerConnectionData()
 {
-    AuthenticationApiUrl = "https://authapi.moralis.io",
-    ApiKey = "1kXrzei19HNrb3YvkLaBbOAuRo6SGcmGqmlZ2E6FYFZ2QnqO46rn3xsAX6eRMBns",
-    MasterKey = "RU70zK1m50qEuaLNHBTM2PlqOQ7OzYuVeImcMq4w",
+    ApiKey = "MY API KEY"
 };
 
 app.Run();

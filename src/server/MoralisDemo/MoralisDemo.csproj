@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\JwtServices\JwtServices.csproj" />
+    <ProjectReference Include="..\JwtServices\JwtServices.csproj" />
   </ItemGroup>
 
 </Project>
